@@ -14,17 +14,17 @@ Design and build the necessary endpoints to:
  The description of the structure and extra information about each resource stored in the database is listed below. 
 
 #### Projects
- Field | Data Type | Metadata
------------- | -------------
-id | number | no need to provide it when creating projects, the database automatically enerates it
-name | string | required
-description | string | required
-completed | boolean | not required, used to indicate if the project is completed
+| Field       | Data types | Metadata                                                                    |
+|-------------|------------|-----------------------------------------------------------------------------|
+| id          | number     | database automatically generated, no need to provide it when creating posts |
+| name        | string     | required                                                                    |
+| description | string     | required                                                                    |
+| completed   | boolean    | used to record whether the project is completed or not                      |
 
 #### Actions
-Field| Data type | Metadata
------------- | -------------
-id | number | automatically generated in the database
-project_id | number | required, must be the id of an existing project
-description | string | up to 128 characters long, required
-notes | string | no size limit, required.
+| Field       | Data types | Metadata                                                                    |
+|-------------|------------|-----------------------------------------------------------------------------|
+| id          | number     | database automatically generated, no need to provide it when creating posts |
+| project_id  | number     | required, must be the id of an existing project                             |
+| description | string     | up to 128 characters long, required                                         |
+| completed   | boolean    | no size limit. used to record additional notes or requirement actions       |
